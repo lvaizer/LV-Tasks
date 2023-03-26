@@ -5,3 +5,9 @@
     width: 90%;
     height: fit-content;
 }
+
+@media (max-width: 768px) {
+    .boardList {
+        width: 100%;
+    }
+}

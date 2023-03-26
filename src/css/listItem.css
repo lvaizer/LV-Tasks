@@ -2,7 +2,6 @@
     width: 272px;
     background-color: var(--light-grey);
     border-radius: 3px;
-    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     max-height: 100%;
@@ -11,6 +10,11 @@
     padding: 10px 8px;
     margin: 0 10px;
     height: fit-content;
+}
+
+@media (max-width: 768px) {
+    .listItem {
+    }
 }
 
 .listItem_draggable_over {

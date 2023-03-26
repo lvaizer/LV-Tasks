@@ -6,8 +6,10 @@ import {getBoardById, updateBoard} from "../../redux/bordsSlice";
 import NotFound from "../NotFound";
 import ListItem from "../list/ListItem";
 import CreateNewList from "../list/CreateNewList";
-import {DndProvider} from 'react-dnd'
+import {DndProvider} from 'react-dnd';
+import {TouchBackend} from 'react-dnd-touch-backend'
 import {HTML5Backend} from 'react-dnd-html5-backend'
+import {isMobile} from 'react-device-detect';
 import {useEffect, useState} from "react";
 
 export default function Board() {
@@ -40,6 +42,22 @@ export default function Board() {
         setIsEdit(false)
     }
 
+    const hasNative = document && (document.elementsFromPoint || document.msElementsFromPoint)
+
+    function getDropTargetElementsAtPoint(x, y, dropTargets) {
+        return dropTargets.filter((t) => {
+            const rect = t.getBoundingClientRect()
+            return (
+                x >= rect.left && x <= rect.right && y <= rect.bottom && y >= rect.top
+            )
+        })
+    }
+
+    const backendOptions = {
+        getDropTargetElementsAtPoint: !hasNative && getDropTargetElementsAtPoint,
+        enableMouseEvents: true
+    }
+
     if (!board) return <NotFound/>
 
     return (
@@ -58,7 +76,7 @@ export default function Board() {
                     <h3 className="board__header_name" onClick={handleEditClicked}>{board.name}</h3>
                 }
             </div>
-            <DndProvider backend={HTML5Backend}>
+            <DndProvider backend={isMobile ? TouchBackend : HTML5Backend} options={backendOptions}>
                 {board.lists.map(list => <ListItem key={list.id} {...list}/>)}
             </DndProvider>
             <CreateNewList boardId={boardId} isFirst={board.lists.length === 0}/>

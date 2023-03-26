@@ -11,3 +11,9 @@
     background-position: 50%;
     background-size: cover;
 }
+
+@media (max-width: 768px) {
+    .app {
+        flex-direction: column;
+    }
+}

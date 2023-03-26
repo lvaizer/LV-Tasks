@@ -5,6 +5,15 @@
     display: flex;
 }
 
+@media (max-width: 768px) {
+    .board {
+        width: 100vw;
+        padding: 10px;
+        overflow: auto;
+        display: -webkit-box;
+    }
+}
+
 .board__header {
     width: 100%;
     position: fixed;
