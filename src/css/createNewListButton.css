@@ -1,0 +1,31 @@
+.createListButton__container {
+    background-color: rgba(255, 255, 255, 0.33);
+    cursor: pointer;
+    border-radius: 3px;
+    height: 2.3rem;
+    min-height: 32px;
+    color: white;
+    padding: 6px 8px;
+    width: 272px;
+    display: flex;
+    font-size: 14px;
+    transition: var(--button-transition-duration)
+}
+
+.createListButton__container:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.createListButton__newListInput_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.createListButton__newListInput_label {
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 8px;
+}

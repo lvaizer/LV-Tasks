@@ -1,0 +1,49 @@
+.board {
+    padding: 70px 20px 20px;
+    width: 90vw;
+    background: linear-gradient(to bottom, #0000003d, #0000 180px, #0000);
+    display: flex;
+}
+
+.board__header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 10%;
+    right: 0;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding: 0 30px
+}
+
+
+.board__header_name_container {
+    display: flex;
+    color: white;
+}
+
+.board__header_name {
+    margin: 0;
+    color: white;
+    cursor: pointer;
+}
+
+.board__header_name_input {
+    font-size: inherit;
+    flex-grow: 1;
+    border-radius: 3px;
+    outline: none;
+    border: none;
+    padding: 4px;
+}
+
+.board__header_name_cancel_button, .board__header_name_save_button {
+    padding: 0 4px;
+    transition: var(--button-transition-duration);
+    border-radius: 3px;
+}
+
+.board__header_name_cancel_button:hover, .board__header_name_save_button:hover {
+    background-color: var(--medium-grey)
+}

@@ -1,0 +1,89 @@
+.taskItem {
+    border-radius: 3px;
+    background-color: white;
+    box-shadow: 0 10px 6px -10px rgba(0, 0, 0, .3);
+    display: block;
+    margin-bottom: 10px;
+    max-width: 300px;
+    position: relative;
+    z-index: 0;
+    padding: 8px;
+    height: fit-content;
+    word-wrap: break-word;
+    cursor: grab;
+}
+
+.taskItem__dragging {
+    background-color: var(--medium-grey)
+}
+
+.taskItem_container {
+    display: flex;
+}
+
+.taskItem_edit_button {
+    display: none;
+    position: absolute;
+    right: 10px;
+    font-size: 18px;
+    padding: 0 2px;
+    border-radius: 3px;
+    transition: var(--button-transition-duration);
+}
+
+.taskItem_edit_button:hover {
+    background-color: var(--light-grey);
+}
+
+.taskItem_container:hover .taskItem_edit_button {
+    display: block;
+}
+
+.taskItem_container > p {
+    margin: 0;
+}
+
+.taskItem_edit_close_btn {
+    float: right;
+    font-size: 24px;
+    transition: var(--button-transition-duration);
+}
+
+.taskItem_edit_close_btn:hover {
+    scale: 1.1;
+}
+
+.taskItem__textarea {
+    overflow: hidden;
+    outline: none;
+    width: 100%;
+    resize: none;
+    padding: 6px;
+}
+
+.taskItem_edit_btn_container {
+    width: 100%;
+    display: grid;
+    grid-auto-flow: column;
+
+}
+
+.taskItem_edit_delete_btn, .taskItem_edit_save_btn {
+    font-weight: 600;
+    font-size: 14px;
+    transition: var(--button-transition-duration);
+    padding: 4px 2px;
+    color: var(--primary);
+    border-radius: 5px;
+}
+
+.taskItem_edit_delete_btn {
+    color: var(--error);
+}
+
+.taskItem_edit_delete_btn:hover, .taskItem_edit_save_btn:hover {
+    background-color: var(--light-grey);
+}
+
+
+

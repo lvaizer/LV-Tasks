@@ -1,0 +1,13 @@
+@import './button-library.css';
+@import './input-library.css';
+
+.app {
+    height: 100%;
+    display: flex;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    background-image: url("https://trello-backgrounds.s3.amazonaws.com/SharedBackground/2048x1152/96fccea1de071471f1b4380baa7f35d3/photo-1677696393693-d158fbef7d4b.jpg");
+    background-position: 50%;
+    background-size: cover;
+}

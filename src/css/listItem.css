@@ -1,0 +1,76 @@
+.listItem {
+    width: 272px;
+    background-color: var(--light-grey);
+    border-radius: 3px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    max-height: 100%;
+    position: relative;
+    white-space: normal;
+    padding: 10px 8px;
+    margin: 0 10px;
+    height: fit-content;
+}
+
+.listItem_draggable_over {
+    background-color: var(--medium-grey);
+}
+
+.listItem__header {
+    margin: 0 0 10px 0;
+    display: flex;
+    align-items: center;
+    transition: var(--button-transition-duration);
+}
+
+.listItem__name {
+    margin: 0;
+    font-weight: 600;
+    font-size: 14px;
+    flex-grow: 1;
+    cursor: pointer;
+}
+
+.listItem__name_container {
+    display: flex;
+    width: 100%;
+}
+
+.listItem__name_input {
+    flex-grow: 1;
+    font-size: inherit;
+    border-radius: 3px;
+    outline: none;
+    border: none;
+    padding: 4px;
+}
+
+.listItem__name_cancel_button, .listItem__name_save_button {
+    padding: 0 4px;
+    transition: var(--button-transition-duration);
+    border-radius: 3px;
+}
+
+.listItem__name_cancel_button:hover, .listItem__name_save_button:hover {
+    background-color: var(--medium-grey)
+}
+
+.listItem_settings {
+    margin-left: auto;
+    width: 24px;
+    z-index: 1;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: var(--button-transition-duration);
+    padding: 0 2px;
+}
+
+.listItem_settings:hover {
+    background-color: var(--medium-grey)
+}
+
+.listItem__tasks_list {
+    overflow-y: auto;
+    overflow-x: hidden;
+}

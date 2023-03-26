@@ -1,0 +1,55 @@
+.btn {
+    background-color: var(--primary);
+    border: 1px solid var(--primary-active);
+    color: white;
+    outline: none;
+    cursor: pointer;
+    padding: .5em 1em;
+    border-radius: .3em;
+    transition: 200ms;
+}
+
+.btn:hover, .btn:focus {
+    box-shadow: 0 0 5px 0 var(--primary-active);
+}
+
+.btn.btn-accent {
+    background-color: var(--primary-active);
+    border: 1px solid var(--primary);
+}
+
+.btn.btn-accent:hover, .btn.btn-accent:focus {
+    box-shadow: 0 0 5px 0 var(--primary);
+}
+
+.btn.btn-danger {
+    background-color: var(--error);
+    border: 1px solid var(--error-active);
+}
+
+.btn.btn-danger:hover, .btn.btn-danger:focus {
+    box-shadow: 0 0 5px 0 var(--error);
+}
+
+.btn.btn-large {
+    font-size: 1.25rem;
+}
+
+.btn.btn-small {
+    font-size: .75rem;
+}
+
+.btn.btn-pill {
+    border-radius: 10000px;
+}
+
+.btn-reset{
+    font-size: inherit;
+    color: inherit;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
