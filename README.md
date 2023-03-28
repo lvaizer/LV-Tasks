@@ -1,4 +1,4 @@
-#Tasks Management App
+# Tasks Management App
 This app is a task management tool that resembles Trello. It allows users to create boards, lists, and tasks, and move them between lists. The app is built using React, Redux-Toolkit, and React-DnD libraries.
 
 ##Installation
