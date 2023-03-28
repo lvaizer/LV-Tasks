@@ -11,7 +11,7 @@ This will install all the required dependencies.
 To run the app, use the following commands in your terminal:
 
 ### `npm run build`
-###` npm start`
+### `npm start`
 This will build the app and start the development server.
 
 In the app, you can create boards by clicking on the "Add Board" button. You can add lists to each board by clicking on the "Add List" button on the board. You can add tasks to each list by clicking on the "Add Task" button on the list.
