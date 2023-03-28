@@ -1,17 +1,17 @@
-#Tasks Management App
+# Tasks Management App
 This app is a task management tool that resembles Trello. It allows users to create boards, lists, and tasks, and move them between lists. The app is built using React, Redux-Toolkit, and React-DnD libraries.
 
-##Installation
+## Installation
 To install the app, run the following command in your terminal:
 
-###`npm install`
+### `npm install`
 This will install all the required dependencies.
 
-##Usage
+## Usage
 To run the app, use the following commands in your terminal:
 
-###`npm run build`
-###`npm start`
+### `npm run build`
+###` npm start`
 This will build the app and start the development server.
 
 In the app, you can create boards by clicking on the "Add Board" button. You can add lists to each board by clicking on the "Add List" button on the board. You can add tasks to each list by clicking on the "Add Task" button on the list.
@@ -20,7 +20,7 @@ You can modify the names of the boards and lists by clicking on the name and typ
 
 The app is also mobile responsive, so you can use it on your phone or tablet.
 
-##Folder Structure
+## Folder Structure
 The app has the following folder structure:
 
 * __'assets'__: This folder contains all the images and icons used in the app.
@@ -29,15 +29,15 @@ The app has the following folder structure:
 * __'objects'__: This folder contains all the data objects used in the app, including the Board, List, and Task objects.
 * __'redux'__: This folder contains all the Redux code used in the app, including the actions, reducers, and selectors.
 
-##Live App
+## Live App
 The app is deployed and running live on Vercel. You can access it at the following URL:
 
 https://lv-tasks.vercel.app/
 
-##Licensing
+## Licensing
 This app is free to use and modify under the MIT license.
 
-##Contact Information
+## Contact Information
 If you have any questions or feedback about the app, please feel free to contact the author:
 
 * Name: Liron Vaizer
